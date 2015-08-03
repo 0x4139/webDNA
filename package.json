@@ -1,0 +1,24 @@
+{
+  "name": "webdna",
+  "version": "1.0.0",
+  "description": "webdna is a devKIT design for single page apps using webkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --hot --inline --config dev.js --colors --watch -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.15.6",
+    "node-sass": "^3.2.0",
+    "sass-loader": "^1.0.3",
+    "style-loader": "^0.12.3"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^0.8.2",
+    "path": "^0.11.14",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.10.5"
+  }
+}
