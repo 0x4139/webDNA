@@ -1,2 +1,6 @@
+'use strict';
 require('./styles/main.scss');
-console.log('12');
+var React = require('react');
+var Hello = require('./views/Hello.jsx');
+
+React.render(<Hello></Hello>, document.body);

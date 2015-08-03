@@ -15,10 +15,24 @@ module.exports = {
     },
     module: {
         loaders: [
+
+            {
+                test: /\.jsx?$/,
+                loader: 'jsx-loader?insertPragma=React.DOM&harmony',
+                resolverLoader:{
+                    root:'./node_modules'
+                }
+            },
             {
                 test: /\.scss$/,
                 loader: "style!css!sass"
             }
         ]
+    },
+    externals: {
+        'react': 'React'
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
     }
 };
